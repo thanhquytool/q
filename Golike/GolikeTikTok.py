@@ -45,7 +45,6 @@ from pystyle import Add, Center, Anime, Colors, Colorate, Write, System
 def check_connection():
     try:
         response = requests.get("https://www.google.com.vn", timeout=3)
-        print("     START TO TOOL     ")
     except (requests.exceptions.ReadTimeout, requests.ConnectionError):
         print("Vui Lòng Kiểm Tra Kết Nối Mạng !!!")
         sys.exit()
